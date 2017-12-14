@@ -1,3 +1,21 @@
+/*******************************************************************************
+
+ *                     A* Algorithm for Raspberry PI                           *
+
+ *                        2017 Code_Alpha                                      *
+
+ * Version 2017                                                                *
+
+ * Rapsberry Board or other embedded Linux                                     *
+
+ * Author  Q.Goudard                                                           *
+
+ *                                                                             *
+
+ *                                                                             *
+
+ *******************************************************************************/
+
 #include <iostream>
 #include <math.h>
 #include <fstream>
