@@ -1,27 +1,6 @@
-//msp430-gcc  -mmcu=msp430g2553 msp.c
-//msp debug _ prog a.out
-//mspdebug rf2500
-//prog a.out
-#include <msp430.h>
 #include "UART.h"
-/*int main(void) {
-	WDTCTL = WDTPW | WDTHOLD;		// Stop watchdog timer
-	P1DIR |= 0b01000000;					// Set P1.0 to output direction
 
-	for(;;) {
-		volatile unsigned int i;	// volatile to prevent optimization
-
-		P1OUT ^= 0b01000000;				// Toggle P1.0 using exclusive-OR
-
-		i = 10000;					// SW Delay
-		do i--;
-		while(i != 0);
-	}
-
-	return 0;
-}*/
-
-int main(void)
+void inisialize_UART()
 {
   WDTCTL = WDTPW + WDTHOLD;     // Stop WDT
   CCTL0 = CCIE;                             // CCR0 interrupt enabled
